@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class problem_2 {
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of test cases");
+        int tc = sc.nextInt();
+        System.out.println("Enter the number of elements of array");
+        int ne = sc.nextInt();
+        System.out.println("Enter the elements:");
+        int arr[] = new int[ne];
+        for(int i = 0; i < ne; i++)
+        {
+         arr[i] = sc.nextInt();
+        }
+        int result = 1;
+        for(int i = 0; i <arr.length; i++)
+        {
+            result = result * arr[i];
+        }
+        
+        System.out.println("Product of the given array is: " + result);
+           
+    }
+    
+}
